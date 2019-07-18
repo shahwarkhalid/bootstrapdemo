@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+<div class="container" align="center">
+	<h1 onclick="alert('hello');">New Post</h1>
+<%= render 'form', post: @post %>
+</div>
+<%= link_to 'Back', posts_path, class: 'btn btn-warning' %>
+<% end %>
